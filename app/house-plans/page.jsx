@@ -1,0 +1,8 @@
+import { ArrowUpRight } from "lucide-react";
+import { Eyebrow, PageIntro, ProjectCallout } from "../content";
+
+export const metadata = { title: "House Plans & Drawings | Calagan Construction" };
+
+export default function HousePlansPage() {
+  return <main><PageIntro number="03" label="ARCHITECTURAL & STRUCTURAL DRAWINGS" eyebrow="HOUSE PLANS & DESIGN PRESENTATIONS" title={<>Explore the <em>possibilities.</em></>}><p>Browse residential design concepts and floor plan presentations. Each project can be tailored to your site, requirements and way of living.</p></PageIntro><section className="section plan-page"><div className="plan-page-heading"><div><Eyebrow dark>RESIDENTIAL FLOOR PLANS</Eyebrow><h2>2, 3 & 4 bedroom <em>house designs.</em></h2></div><a className="button button-light" href="/contact">Discuss your plans <ArrowUpRight size={16} /></a></div><div className="plan-gallery"><figure><img src="/Images/drawing.jpeg" alt="Residential house floor plan presentation" /><figcaption>Residential floor plan concepts</figcaption></figure><figure><img src="/Images/drawing2.jpeg" alt="Architectural house plan drawing" /><figcaption>Architectural drawing details</figcaption></figure><figure><img src="/Images/kitchen interior.jpeg" alt="Contemporary kitchen interior concept" /><figcaption>Interior design inspiration</figcaption></figure></div><div className="drawing-info"><div><Eyebrow>PROJECT-SPECIFIC DESIGN</Eyebrow><h3>Plans shaped around your site.</h3></div><p>Concept designs are a starting point. Final technical drawings are prepared for each specific project. Architectural presentation plans are not a substitute for engineered structural drawings or statutory approvals.</p></div></section><ProjectCallout /></main>;
+}
